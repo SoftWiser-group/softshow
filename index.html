@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>课题组公开报告与成果 | Public Talks & Research Highlights</title>
+    <meta
+      name="description"
+      content="课题组公开报告与研究成果汇总：公开视频、文章、开源项目与媒体报道。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="brand">
+          <span class="brand-label">Research Group Showcase</span>
+          <h1>课题组公开报告与成果</h1>
+          <p class="lead">
+            面向系统与可信计算的研究工作，聚焦形式化方法、分布式系统与工程化落地。
+          </p>
+          <div class="tag-row">
+            <span>Formal Methods</span>
+            <span>Distributed Systems</span>
+            <span>Verification</span>
+            <span>Systems</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p class="card-title">Public Talks & Highlights</p>
+            <p class="card-desc">
+              精选公开演讲、论文解读、文章与开源项目索引。内容少而精，强调可复用与可验证的系统研究成果。
+            </p>
+            <div class="hero-stat">
+              <div>
+                <p class="stat-num" id="stat-count">12</p>
+                <p class="stat-label">公开内容条目</p>
+              </div>
+              <div>
+                <p class="stat-num">4</p>
+                <p class="stat-label">内容类型</p>
+              </div>
+              <div>
+                <p class="stat-num">3</p>
+                <p class="stat-label">核心方向</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about" id="about">
+        <div class="section-header">
+          <h2>课题组简介</h2>
+          <p>
+            我们围绕分布式系统规范、可验证系统设计与工程工具链展开研究，强调理论与实践之间的闭环。
+            公开报告与文章主要聚焦系统正确性、形式化规格与可维护工程实践。
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>研究方向</h3>
+            <p>形式化规格、分布式系统、一致性与可靠性、系统工程化。</p>
+          </div>
+          <div class="about-card">
+            <h3>公开内容</h3>
+            <p>公开视频、论文解读、评述文章、开源项目与媒体报道。</p>
+          </div>
+          <div class="about-card">
+            <h3>合作与传播</h3>
+            <p>欢迎技术交流、学术合作与开源共建。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured" id="featured">
+        <div class="section-header">
+          <h2>精选内容</h2>
+          <p>主观策展的代表性条目，覆盖公开演讲、论文与开源项目。</p>
+        </div>
+        <div class="featured-grid" id="featured-list"></div>
+      </section>
+
+      <section class="section library" id="library">
+        <div class="section-header">
+          <h2>公开报告索引</h2>
+          <p>所有公开内容统一索引，支持关键词搜索与类型筛选。</p>
+        </div>
+        <div class="filters">
+          <div class="search">
+            <label for="search-input">搜索</label>
+            <input id="search-input" type="text" placeholder="输入标题/关键词" />
+          </div>
+          <div class="filter-group">
+            <span>类型</span>
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="video">视频</button>
+            <button class="filter-btn" data-filter="article">文章</button>
+            <button class="filter-btn" data-filter="paper">论文</button>
+            <button class="filter-btn" data-filter="repo">开源</button>
+          </div>
+        </div>
+        <div class="card-grid" id="content-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div>
+        <h2>联系方式</h2>
+        <p>如需进一步了解研究内容或合作机会，请通过邮箱或主页联系。</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Group Website</a>
+        <a href="#">Email</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
